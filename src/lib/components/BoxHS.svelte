@@ -49,7 +49,7 @@
         font-family: "Kanit";
     }
     .hs {
-        margin: 1rem 3rem;
+        margin: 1rem auto;
         font: var(--h1);
         text-shadow: var(--secondaryColor) 2px 2px;
     }

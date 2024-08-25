@@ -3,7 +3,7 @@
 </script>
 
 <section>
-    <h1>Eventos Importantes</h1>
+    <!-- <h1>Eventos Importantes</h1> -->
     <BoxHS namePropHTML={"Formatura EPCAR"} dateProp={"2024-12-13"} />
     
     <BoxHS namePropHTML={"Espadim"} dateProp={"2025-06-11"} />
