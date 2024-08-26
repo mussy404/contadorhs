@@ -1,20 +1,12 @@
 <script>
     export let namePropHTML = "HS sem nome";
     export let dateProp = "2024-07-15";
-    // Gambiarra pra não dar merda entre região do server e as datas. 
-    let now_date = new Date();
-    let now_utc = Date.UTC(now_date.getUTCFullYear(), now_date.getUTCMonth(),
-        now_date.getUTCDate(), now_date.getUTCHours(),
-        now_date.getUTCMinutes(), now_date.getUTCSeconds());
-
-    let event_date = new Date(dateProp);
-    let event_utc = Date.UTC(event_date.getUTCFullYear(), event_date.getUTCMonth(),
-        event_date.getUTCDate(), event_date.getUTCHours(),
-        event_date.getUTCMinutes(), event_date.getUTCSeconds());
+    let now_date = new Date().getTime();
+    let event_date = new Date(dateProp).getTime();
     // Cálculo do HS
     let hs = 0;
     try {
-        hs = event_utc - now_utc;
+        hs = event_date - now_date;
         hs = Math.ceil(hs / (1000 * 60 * 60 * 24)) // milisegundos pra dias
         hs = hs > 0 ? hs : 0;
     } catch (e) {
