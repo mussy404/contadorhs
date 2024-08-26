@@ -6,7 +6,7 @@
 :root {
     --primaryColor: rgb(230, 230, 250);
     --secondaryColor: rgb(24, 45, 19);
-    --thirdColor: rgb(46, 72, 45);
+    --thirdColor: rgb(50, 72, 45);
     --accentColor1: hsl(112, 60%, 50%);
     --accentColor2: hsl(259, 90%, 60%);
     --ff: "Roboto", "DM Sans", sans-serif;
